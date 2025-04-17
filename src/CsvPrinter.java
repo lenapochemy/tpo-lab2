@@ -14,15 +14,10 @@ public class CsvPrinter {
 
         PrintWriter printWriter = new PrintWriter(out);
         for (Double x = start; x <= end; x += step) {
-            try {
-                System.out.println(x);
                 Double res = func.apply(x);
-                if(!Double.isNaN(res) && res <= 6.0) {
+                if(!Double.isNaN(res) && res <= 100.0) {
                     printWriter.printf("%f;%f\n", x, res);
                 }
-            } catch (IllegalArgumentException e){
-                continue;
-            }
 
         }
 

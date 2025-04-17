@@ -25,9 +25,9 @@ public class Main {
         CsvPrinter csvPrinter = new CsvPrinter();
 
         ByteArrayOutputStream buf = new ByteArrayOutputStream();
-        csvPrinter.calcAndPrint(function, -6.0, 0.0, 0.01, buf);
+        csvPrinter.calcAndPrint(function, 3.3, 3.8, 0.01, buf);
 
-        try (FileOutputStream fileOutputStream = new FileOutputStream("res1.csv")){
+        try (FileOutputStream fileOutputStream = new FileOutputStream("res.csv")){
             buf.writeTo(fileOutputStream);
         } catch (IOException e){
             System.out.println("problem with writing to file");
