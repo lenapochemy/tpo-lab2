@@ -40,7 +40,6 @@ public class BigFunction implements Function<Double, Double> {
             double tanx = tan.apply(x);
             double cotx = cot.apply(x);
 
-            System.out.println(sinx + " " + cosx + " " + secx + " " + cscx + " " + tanx + " " + cotx);
 
             double a = Math.pow(((((Math.pow(sinx * cosx, 3) / cosx) + cotx - sinx) / tanx) + secx), 3) * cscx * cscx;
             double b = Math.pow(((((secx - (cscx * secx)) - Math.pow((Math.pow(secx, 3) / secx), 3)) + sinx) * Math.pow(tanx, 2)), 2);

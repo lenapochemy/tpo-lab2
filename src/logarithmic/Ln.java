@@ -25,9 +25,6 @@ public class Ln implements Function<Double, Double> {
         int n = 0;
         while (Math.abs(tmp) > delta) {
             tmp = Math.pow((x - 1) / (x + 1), 2 * n + 1) / (2 * n + 1);
-            if (tmp == Double.NEGATIVE_INFINITY || tmp == Double.POSITIVE_INFINITY) {
-                break;
-            }
             sum += tmp;
             n++;
         }

@@ -8,7 +8,7 @@ import trigonometry.*;
 
 import java.util.stream.Stream;
 
-public class FunctionModuleTest {
+public class FunctionIntegrationTest {
 
     private static final double delta = 0.001;
 

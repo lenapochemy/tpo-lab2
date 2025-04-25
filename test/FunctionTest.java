@@ -43,7 +43,7 @@ public class FunctionTest {
     }
 
     @ParameterizedTest
-    @MethodSource("FunctionModuleTest#provideFunctionModuleTest")
+    @MethodSource("FunctionIntegrationTest#provideFunctionModuleTest")
     void functionTest(double x, double res) {
         Assertions.assertEquals(res, function.apply(x), delta);
     }
